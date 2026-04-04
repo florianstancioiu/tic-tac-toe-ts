@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+
+  --color-dark-navy: #1a2a33;
+  --color-semi-dark-navy: #1f3641;
+  --color-light-yellow: #f2b137;
+  --color-light-yellow-shadow: #cc8b13;
+  --color-light-blue: #31c3bd;
+  --color-light-blue-shadow: #118c87;
+  --color-silver: #a8bfc9;
+}
+
+/*
+export default {
+  theme: {
+    extend: {
+      colors: {
+        
+      },
+      fontFamily: {
+        outfit: [],
+      },
+      boxShadow: {
+        'box-light-yellow': 'inset 0px -8px 0px 0px #CC8B13',
+        'box-light-blue': 'inset 0px -8px 0px 0px #118C87',
+        'box-dark-navy': 'inset 0px -8px 0px 0px #10212A',
+        'box-silver': 'inset 0px -4px 0px 0px #6B8997',
+      },
+    },
+  },
+  plugins: [],
+};
+*/
