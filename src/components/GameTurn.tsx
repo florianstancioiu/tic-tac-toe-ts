@@ -1,18 +1,18 @@
-import LogoImage from '../images/logo.png';
-import PlayerTurn from './PlayerTurn';
-import RefreshButton from './UI/RefreshButton';
+import LogoImage from "../images/logo.png";
+import PlayerTurn from "./PlayerTurn";
+import RefreshButton from "./UI/RefreshButton";
 
 const GameTurn = () => {
   return (
-    <div className='flex justify-between gap-[2rem] mb-[6.4rem] md:mb-[2rem] max-w-[32.8rem] mx-auto md:mx-[initial] md:max-w-full'>
+    <div className="flex justify-between gap-8 mb-[6.4rem] md:mb-8 max-w-[32.8rem] mx-auto md:mx-[initial] md:max-w-full">
       <div>
         <img
           src={LogoImage}
-          alt='Tic Tac Toe Logo'
-          className='cursor-pointer'
+          alt="Tic Tac Toe Logo"
+          className="cursor-pointer"
         />
       </div>
-      <PlayerTurn />
+      <PlayerTurn turn="x" />
       <RefreshButton />
     </div>
   );
