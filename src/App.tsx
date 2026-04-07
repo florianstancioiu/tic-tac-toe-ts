@@ -4,8 +4,10 @@ import Game from "./components/Game";
 const App = () => {
   return (
     <>
-      {/*<NewGame />*/}
+      <NewGame />
+      {/*
       {<Game />}
+      */}
     </>
   );
 };

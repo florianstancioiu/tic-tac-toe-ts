@@ -59,8 +59,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with types
+- [TailwindCSS](https://tailwindcss.com/) - For styles
+- [Vite](https://vite.dev/) - Build tool
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -98,8 +99,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Typescript - multidimensional array initialization](https://stackoverflow.com/a/30144620/12159189) - This helped me create a type for a multidimensional array
+- [Typescript - Pick only a value from another type's field](https://stackoverflow.com/a/75461664/12159189) - This helped me create the intermediary type for a multidimensional array
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
