@@ -131,9 +131,10 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 
 ## Daily summaries
 
-| Date            | Time Spent | Summary                                                  |
-| --------------- | ---------- | -------------------------------------------------------- |
-| April 4th, 2026 | 1 hour     | I extracted the existing src dir to a typescript project |
-| April 7th, 2026 | 1 hour     | I added types (where necessary) to all components        |
+| Date             | Time Spent | Summary                                                  |
+| ---------------- | ---------- | -------------------------------------------------------- |
+| April 4th, 2026  | 1 hour     | I extracted the existing src dir to a typescript project |
+| April 7th, 2026  | 1 hour     | I added types (where necessary) to all components        |
+| April 16th, 2026 | 0.5 hours  | I worked a bit on the PickPlayerMark component           |
 
-_Total time spent working on the project:_ **2 hours**
+_Total time spent working on the project:_ **2.5 hours**
