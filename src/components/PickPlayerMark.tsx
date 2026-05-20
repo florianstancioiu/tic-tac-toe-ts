@@ -16,7 +16,7 @@ const PickPlayerMark = () => {
         Pick Player 1's Mark
       </h2>
       {pickX ? (
-        <div className="mb-[1.6rem] py-2 rounded-[10px] bg-dark-navy flex h-[7.2rem] px-2">
+        <div className="mb-[1.6rem] py-2 rounded-[10px] bg-dark-navy flex h-18 px-2">
           <div
             onClick={chooseX}
             className="w-[50%] bg-silver rounded-2xl grid place-items-center cursor-pointer "
@@ -39,7 +39,7 @@ const PickPlayerMark = () => {
           </div>
         </div>
       ) : (
-        <div className="mb-[1.6rem] py-2 rounded-[10px] bg-dark-navy flex h-[7.2rem] px-2">
+        <div className="mb-[1.6rem] py-2 rounded-[10px] bg-dark-navy flex h-18 px-2">
           <div
             onClick={chooseX}
             className="w-[50%] grid place-items-center cursor-pointer "

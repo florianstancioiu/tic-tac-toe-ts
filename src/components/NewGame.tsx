@@ -4,7 +4,7 @@ import PickPlayerMark from "./PickPlayerMark";
 
 const NewGame = () => {
   return (
-    <div className="pt-48 mb-48 md:py-[27.6rem] md:max-w-184 md:mx-auto 2xl:py-86">
+    <div className="md:max-w-115 md:mx-auto py-57">
       <img
         src={LogoImage}
         alt="Tic Tac Toe Logo"
