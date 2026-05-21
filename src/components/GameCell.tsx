@@ -11,15 +11,12 @@ const GameCell = ({ value }: GameCellProps) => {
     value === "x" ? XMarkImage : value === "o" ? OMarkImage : "";
 
   return (
-    <div className="bg-semi-dark-navy shadow-box-dark-navy rounded-1 w-[9.6rem] h-[9.6rem] md:w-56 md:h-56 grid place-content-center cursor-pointer">
-      {showImage && (
-        <img
-          src={imageType}
-          alt=""
-          className="w-16 h-16 md:w-[6.4rem] md:h-[6.4rem]"
-        />
-      )}
-    </div>
+    <button
+      type="button"
+      className="bg-semi-dark-navy shadow-box-dark-navy rounded-2xl w-full h-24 grid place-content-center cursor-pointer"
+    >
+      {showImage && <img src={imageType} alt="" className="size-10" />}
+    </button>
   );
 };
 

@@ -9,8 +9,8 @@ const PlayerTurn = ({ turn }: PlayerTurnProps) => {
   const imageType = turn === "x" ? smallXIcon : smallOIcon;
 
   return (
-    <div className="flex items-center justify-center bg-semi-dark-navy shadow-box-dark-navy rounded-2xl h-16 w-[9.6rem] md:w-56 md:h-[5.2rem] md:leading-[5.2rem] pb-4 leading-16 ml-[-2.6rem]">
-      <img src={imageType} alt="" className="mr-[0.9rem]" />
+    <div className="flex items-center justify-center gap-2.5 bg-semi-dark-navy shadow-box-dark-navy rounded-md h-10 w-24 -ml-8">
+      <img src={imageType} alt="" />
       <p className="text-silver uppercase">Turn</p>
     </div>
   );

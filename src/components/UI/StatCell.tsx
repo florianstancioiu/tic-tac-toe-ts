@@ -1,14 +1,21 @@
+import { twMerge } from "tailwind-merge";
+
 export type StatCellProps = {
-  bgColor: string;
+  className: string;
   title: string;
   numericTitle: number;
 };
 
-const StatCell = ({ bgColor, title, numericTitle }: StatCellProps) => {
+const StatCell = ({ className, title, numericTitle }: StatCellProps) => {
   return (
-    <div className={`${bgColor} rounded-2xl w-[9.6rem] md:w-56 py-[1.2rem]`}>
-      <p className="text-[1.2rem] md:text-[1.4rem]">{title}</p>
-      <p className="text-[2rem] font-bold md:text-[2.4rem]">{numericTitle}</p>
+    <div
+      className={twMerge(
+        "rounded-2xl w-[9.6rem] py-[1.2rem] select-none",
+        className,
+      )}
+    >
+      <p className="text-[12px]">{title}</p>
+      <p className="text-[20px] font-bold">{numericTitle}</p>
     </div>
   );
 };

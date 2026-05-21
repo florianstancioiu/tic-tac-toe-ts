@@ -3,9 +3,13 @@ import GameTurn from "./GameTurn";
 import GameStats from "./GameStats";
 import Modal from "./UI/Modal";
 
-const Game = () => {
+export type GameProps = {
+  versusCpu: boolean;
+};
+
+const Game = ({ versusCpu }: GameProps) => {
   return (
-    <div className="pt-[2.4rem] pb-[12.7rem] md:py-80 md:max-w-184 md:mx-auto 2xl:py-[13.8rem]">
+    <div className="pt-6">
       <GameTurn />
       <GameBoard />
       <GameStats />
