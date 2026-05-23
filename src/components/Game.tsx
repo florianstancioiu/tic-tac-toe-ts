@@ -13,15 +13,13 @@ const Game = ({ versusCpu }: GameProps) => {
       <GameTurn />
       <GameBoard />
       <GameStats />
-      {/*
       <Modal
-        title='Oh no, you lost...'
-        bigTitle='Takes the round'
-        bigTitleIcon='o'
-        buttonSilverText='Quit'
-        buttonYellowText='Next Round'
+        title="Oh no, you lost..."
+        bigTitle="Takes the round"
+        bigTitleIcon="o"
+        buttonSilverText="Quit"
+        buttonYellowText="Next Round"
       />
-       */}
     </div>
   );
 };
