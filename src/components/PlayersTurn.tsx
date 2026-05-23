@@ -1,12 +1,12 @@
 import smallXIcon from "../images/small-x-icon.png";
 import smallOIcon from "../images/small-o-icon.png";
 
-export type PlayerTurnProps = {
-  turn: "x" | "o";
+export type PlayersTurnProps = {
+  playersTurn: "x" | "o";
 };
 
-const PlayerTurn = ({ turn }: PlayerTurnProps) => {
-  const imageType = turn === "x" ? smallXIcon : smallOIcon;
+const PlayersTurn = ({ playersTurn }: PlayersTurnProps) => {
+  const imageType = playersTurn === "x" ? smallXIcon : smallOIcon;
 
   return (
     <div className="flex items-center justify-center gap-2.5 bg-semi-dark-navy shadow-box-dark-navy rounded-md h-10 w-24 -ml-8 pb-2">
@@ -16,4 +16,4 @@ const PlayerTurn = ({ turn }: PlayerTurnProps) => {
   );
 };
 
-export default PlayerTurn;
+export default PlayersTurn;

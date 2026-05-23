@@ -1,3 +1,4 @@
+import { useState } from "react";
 import GameBoard from "./GameBoard";
 import GameTurn from "./GameTurn";
 import GameStats from "./GameStats";
@@ -8,11 +9,15 @@ export type GameProps = {
 };
 
 const Game = ({ versusCpu }: GameProps) => {
+  const [playersTurn, setPlayersTurn] = useState<"x" | "o">("x");
+
   return (
     <div className="pt-6">
-      <GameTurn />
-      <GameBoard />
+      <GameTurn playersTurn={playersTurn} />
+      <GameBoard playersTurn={playersTurn} />
       <GameStats />
+      {/* 
+      
       <Modal
         title="Oh no, you lost..."
         bigTitle="Takes the round"
@@ -20,6 +25,7 @@ const Game = ({ versusCpu }: GameProps) => {
         buttonSilverText="Quit"
         buttonYellowText="Next Round"
       />
+      */}
     </div>
   );
 };

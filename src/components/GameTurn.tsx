@@ -1,8 +1,12 @@
 import LogoImage from "../images/logo.png";
-import PlayerTurn from "./PlayerTurn";
+import PlayersTurn from "./PlayersTurn";
 import RefreshButton from "./UI/RefreshButton";
 
-const GameTurn = () => {
+export type GameTurnProps = {
+  playersTurn: "x" | "o";
+};
+
+const GameTurn = ({ playersTurn }: GameTurnProps) => {
   return (
     <div className="flex justify-between items-center gap-8 mb-10 max-w-115 mx-auto">
       <div>
@@ -12,7 +16,7 @@ const GameTurn = () => {
           className="cursor-pointer"
         />
       </div>
-      <PlayerTurn turn="x" />
+      <PlayersTurn playersTurn={playersTurn} />
       <RefreshButton />
     </div>
   );

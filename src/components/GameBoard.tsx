@@ -6,6 +6,9 @@ export type GameCell = {
   value: GameCellProps["value"];
 };
 export type GameCells = GameCell[];
+export type GameBoardProps = {
+  playersTurn: "x" | "o";
+};
 
 const cells: GameCells = [
   {
@@ -46,11 +49,17 @@ const cells: GameCells = [
   },
 ];
 
-const GameBoard = () => {
+const GameBoard = ({ playersTurn }: GameBoardProps) => {
   return (
     <div className="grid gap-5 max-w-115 mx-auto grid-cols-3">
       {cells.map((cell) => {
-        return <GameCell key={cell.id} value={cell.value} />;
+        return (
+          <GameCell
+            key={cell.id}
+            value={cell.value}
+            playersTurn={playersTurn}
+          />
+        );
       })}
     </div>
   );
