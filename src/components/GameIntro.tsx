@@ -14,7 +14,7 @@ const GameIntro = () => {
       <Button title="New Game (vs CPU)" className="w-full" />
       <Button
         title="New Game (vs Player)"
-        className="w-full bg-light-blue shadow-box-light-blue active:shadow-box-light-blue-click"
+        className="w-full bg-light-blue shadow-box-light-blue active:shadow-box-light-blue-click hover:bg-teal-300"
       />
     </div>
   );

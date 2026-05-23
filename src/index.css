@@ -3,6 +3,10 @@
 @theme {
   --font-outfit: "Outfit", sans-serif;
 
+  --color-amber-300: #ffc860;
+  --color-teal-300: #65e9e4;
+  --color-slate-100: #dbe8ed;
+
   --color-dark-navy: #1a2a33;
   --color-semi-dark-navy: #1f3641;
   --color-light-yellow: #f2b137;

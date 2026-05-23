@@ -10,7 +10,7 @@ export type GameProps = {
 
 const Game = ({ versusCpu }: GameProps) => {
   const [playersTurn, setPlayersTurn] = useState<"x" | "o">("x");
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="pt-6 md:max-w-115 md:mx-auto md:pt-50 md:pb-20">
