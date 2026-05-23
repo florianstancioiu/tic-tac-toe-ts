@@ -137,5 +137,6 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 | April 7th, 2026  | 1 hour     | I added types (where necessary) to all components                                 |
 | April 16th, 2026 | 0.5 hours  | I worked a bit on the PickPlayerMark component                                    |
 | May 21st, 2026   | 1 hour     | I updated the mobile version of the app using tailwind sizes, not with rem values |
+| May 23st, 2026   | 2.5 hours  | I worked on the tablet and desktop version and added hover and active states      |
 
-_Total time spent working on the project:_ **3.5 hours**
+_Total time spent working on the project:_ **5 hours**
