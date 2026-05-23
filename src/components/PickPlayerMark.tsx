@@ -11,8 +11,10 @@ const PickPlayerMark = () => {
   const chooseO = () => setPickX(false);
 
   return (
-    <div className="shadow-box-dark-navy rounded-[10px] mb-8 bg-semi-dark-navy text-center uppercase px-6">
-      <h2 className="text-silver mb-6 pt-6 font-bold">Pick Player 1's Mark</h2>
+    <div className="shadow-box-dark-navy rounded-[10px] mb-8 bg-semi-dark-navy text-center uppercase px-6 md:mb-10">
+      <h2 className="text-silver mb-6 pt-6 font-bold leading-[125%] tracking-[1px]">
+        Pick Player 1's Mark
+      </h2>
       {pickX ? (
         <div className="mb-4 py-2 rounded-[10px] bg-dark-navy flex h-18 px-2">
           <div

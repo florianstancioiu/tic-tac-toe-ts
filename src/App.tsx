@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NewGame from "./components/NewGame";
+import GameIntro from "./components/GameIntro";
 import Game from "./components/Game";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <>
-      {!inProgress && <NewGame />}
+      {!inProgress && <GameIntro />}
       {inProgress && <Game versusCpu={versusCpu} />}
     </>
   );

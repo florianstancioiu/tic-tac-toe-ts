@@ -1,34 +1,18 @@
+import { twMerge } from "tailwind-merge";
+
 export type ButtonProps = {
   title: string;
-  color?: "yellow" | "blue" | "silver";
-  fullWidth?: boolean;
+  className?: string;
 };
 
-const Button = ({
-  title,
-  color = "yellow",
-  fullWidth = false,
-}: ButtonProps) => {
-  let colorClasses;
-
-  switch (color) {
-    case "yellow":
-      colorClasses = "bg-light-yellow shadow-box-light-yellow";
-      break;
-    case "blue":
-      colorClasses = "bg-light-blue shadow-box-light-blue";
-      break;
-    case "silver":
-      colorClasses = "bg-silver shadow-box-silver";
-      break;
-  }
-
+const Button = ({ title, className = "" }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={`${colorClasses} ${
-        fullWidth ? "w-full" : ""
-      } block mb-[1.6rem] uppercase rounded-[10px] font-bold h-14 leading-14 md:h-17 md:leading-17 px-[1.7rem] cursor-pointer`}
+      className={twMerge(
+        "bg-light-yellow -translate-y-1 shadow-box-light-yellow transition-all duration-200 block mb-[1.6rem] uppercase rounded-[10px] font-bold h-14 leading-14 md:h-17 md:leading-17 px-[1.7rem] cursor-pointer active:translate-y-0 active:shadow-box-light-yellow-click",
+        className,
+      )}
     >
       {title}
     </button>

@@ -9,13 +9,10 @@ export type StatCellProps = {
 const StatCell = ({ className, title, numericTitle }: StatCellProps) => {
   return (
     <div
-      className={twMerge(
-        "rounded-2xl w-[9.6rem] py-[1.2rem] select-none",
-        className,
-      )}
+      className={twMerge("rounded-2xl w-[9.6rem] py-3 select-none", className)}
     >
-      <p className="text-[12px]">{title}</p>
-      <p className="text-[20px] font-bold">{numericTitle}</p>
+      <p className="text-[12px] md:text-[14px]">{title}</p>
+      <p className="text-[20px] font-bold md:text-[24px]">{numericTitle}</p>
     </div>
   );
 };

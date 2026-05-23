@@ -10,22 +10,22 @@ export type GameProps = {
 
 const Game = ({ versusCpu }: GameProps) => {
   const [playersTurn, setPlayersTurn] = useState<"x" | "o">("x");
+  const [showModal, setShowModal] = useState(true);
 
   return (
-    <div className="pt-6">
+    <div className="pt-6 md:max-w-115 md:mx-auto md:pt-50 md:pb-20">
       <GameTurn playersTurn={playersTurn} />
       <GameBoard playersTurn={playersTurn} />
       <GameStats />
-      {/* 
-      
-      <Modal
-        title="Oh no, you lost..."
-        bigTitle="Takes the round"
-        bigTitleIcon="o"
-        buttonSilverText="Quit"
-        buttonYellowText="Next Round"
-      />
-      */}
+      {showModal && (
+        <Modal
+          title="Oh no, you lost..."
+          bigTitle="Takes the round"
+          bigTitleIcon="o"
+          buttonSilverText="Quit"
+          buttonYellowText="Next Round"
+        />
+      )}
     </div>
   );
 };

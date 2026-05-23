@@ -12,7 +12,12 @@
   --color-silver: #a8bfc9;
 
   --shadow-box-dark-navy: inset 0px -8px 0px 0px #10212a;
+  --shadow-box-dark-navy-click: inset 0px -4px 0px 0px #10212a;
   --shadow-box-light-yellow: inset 0px -8px 0px 0px #cc8b13;
+  --shadow-box-light-yellow-click: inset 0px -4px 0px 0px #cc8b13;
   --shadow-box-light-blue: inset 0px -8px 0px 0px #118c87;
-  --shadow-box-silver: inset 0px -4px 0px 0px #6b8997;
+  --shadow-box-light-blue-click: inset 0px -4px 0px 0px #118c87;
+  --shadow-box-silver: inset 0px -8px 0px 0px #6b8997;
+  --shadow-box-silver-refresh: inset 0px -4px 0px 0px #6b8997;
+  --shadow-box-silver-refresh-click: inset 0px -2px 0px 0px #6b8997;
 }

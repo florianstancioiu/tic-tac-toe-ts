@@ -56,7 +56,10 @@ const Modal = ({
             <span>{bigTitle}</span>
           </div>
           <div className="flex justify-evenly gap-4 md:justify-center">
-            <Button color="silver" title={buttonSilverText} />
+            <Button
+              title={buttonSilverText}
+              className="bg-silver shadow-box-silver active:shadow-box-light-blue-click"
+            />
             <Button title={buttonYellowText} />
           </div>
         </div>
