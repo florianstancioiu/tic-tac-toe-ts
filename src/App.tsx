@@ -3,7 +3,7 @@ import GameIntro from "./components/GameIntro";
 import Game from "./components/Game";
 
 const App = () => {
-  const [inProgress, setInProgress] = useState(true);
+  const [inProgress, setInProgress] = useState(false);
   const [versusCpu, setVersusCpu] = useState(false);
 
   return (

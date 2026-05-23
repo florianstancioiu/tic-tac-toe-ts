@@ -39,7 +39,7 @@ const Modal = ({
 
   return createPortal(
     <div className="absolute left-0 top-0 w-full h-full">
-      <div className="absolute opacity-[0.5] bg-black h-full w-full"></div>
+      <div className="absolute opacity-[0.5] bg-gray-950 h-full w-full"></div>
       <div className="absolute top-[50%] translate-y-[-50%] w-full bg-semi-dark-navy">
         <div className="text-center max-w-md md:max-w-3xl mx-auto relative z-2 w-full pt-16 pb-8 md:pt-18 md:pb-18 px-6">
           {title !== undefined && title.length !== 0 && (
