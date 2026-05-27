@@ -3,12 +3,18 @@ import { twMerge } from "tailwind-merge";
 export type ButtonProps = {
   title: string;
   className?: string;
+  onClick?: () => void;
 };
 
-const Button = ({ title, className = "" }: ButtonProps) => {
+const Button = ({ title, className = "", onClick }: ButtonProps) => {
   return (
     <button
       type="button"
+      onClick={() => {
+        if (onClick) {
+          onClick();
+        }
+      }}
       className={twMerge(
         "bg-light-yellow -translate-y-1 shadow-box-light-yellow transition-all duration-200 block mb-[1.6rem] uppercase rounded-[10px] font-bold h-14 leading-14 md:h-17 md:leading-17 px-[1.7rem] cursor-pointer active:translate-y-0 active:shadow-box-light-yellow-click hover:bg-amber-300",
         className,

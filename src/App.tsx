@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { useTicTacToeContext } from "./context/TicTacToe";
 import GameIntro from "./components/GameIntro";
 import Game from "./components/Game";
 
 const App = () => {
-  const [inProgress, setInProgress] = useState(false);
-  const [versusCpu, setVersusCpu] = useState(false);
+  const { inProgress } = useTicTacToeContext();
 
   return (
     <>
       {!inProgress && <GameIntro />}
-      {inProgress && <Game versusCpu={versusCpu} />}
+      {inProgress && <Game />}
     </>
   );
 };

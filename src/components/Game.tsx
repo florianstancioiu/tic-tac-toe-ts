@@ -3,19 +3,15 @@ import GameBoard from "./GameBoard";
 import GameTurn from "./GameTurn";
 import GameStats from "./GameStats";
 import Modal from "./UI/Modal";
+import { useTicTacToeContext } from "../context/TicTacToe";
 
-export type GameProps = {
-  versusCpu: boolean;
-};
-
-const Game = ({ versusCpu }: GameProps) => {
-  const [playersTurn, setPlayersTurn] = useState<"x" | "o">("x");
-  const [showModal, setShowModal] = useState(false);
+const Game = () => {
+  const { showModal } = useTicTacToeContext();
 
   return (
     <div className="pt-6 md:max-w-115 md:mx-auto md:pt-50 md:pb-20">
-      <GameTurn playersTurn={playersTurn} />
-      <GameBoard playersTurn={playersTurn} />
+      <GameTurn />
+      <GameBoard />
       <GameStats />
       {showModal && (
         <Modal
