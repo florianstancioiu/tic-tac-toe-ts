@@ -6,17 +6,32 @@ import {
   type SetStateAction,
 } from "react";
 
+import initialCells from "../components/utils/initialCells";
+import { type GameCellProps } from "../components/GameCell";
+
+export type GameCell = {
+  id: number;
+  value: GameCellProps["value"];
+  col: 0 | 1 | 2;
+  row: 0 | 1 | 2;
+};
+
+export type PlayerMark = "x" | "o";
+
 export type TicTacToeState = {
   inProgress: boolean;
   setInProgress: Dispatch<SetStateAction<boolean>>;
   versusCpu: boolean;
   setVersusCpu: Dispatch<SetStateAction<boolean>>;
-  initialPlayerMark: "x" | "o";
-  setInitialPlayerMark: Dispatch<SetStateAction<"x" | "o">>;
-  playerMark: "x" | "o";
-  setPlayerMark: Dispatch<SetStateAction<"x" | "o">>;
+  initialPlayerMark: PlayerMark;
+  setInitialPlayerMark: Dispatch<SetStateAction<PlayerMark>>;
+  playerMark: PlayerMark;
+  setPlayerMark: Dispatch<SetStateAction<PlayerMark>>;
   showModal: boolean;
   setShowModal: Dispatch<SetStateAction<boolean>>;
+  cells: GameCell[];
+  setCells: Dispatch<SetStateAction<GameCell[]>>;
+  restartGame: () => void;
 };
 
 const TicTacToeContext = createContext<TicTacToeState | null>(null);
@@ -33,6 +48,12 @@ export const TicTacToeContextProvider = ({
   const [showModal, setShowModal] = useState(false);
   const [initialPlayerMark, setInitialPlayerMark] = useState<"x" | "o">("x");
   const [playerMark, setPlayerMark] = useState<"x" | "o">("x");
+  const [cells, setCells] = useState<GameCell[]>(initialCells);
+
+  const restartGame = () => {
+    setCells(initialCells);
+    setPlayerMark(initialPlayerMark);
+  };
 
   return (
     <TicTacToeContext.Provider
@@ -47,6 +68,9 @@ export const TicTacToeContextProvider = ({
         setInitialPlayerMark,
         playerMark,
         setPlayerMark,
+        cells,
+        setCells,
+        restartGame,
       }}
     >
       {children}

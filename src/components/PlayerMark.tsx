@@ -1,4 +1,3 @@
-import { useState } from "react";
 import OMarkDarkIcon from "../images/o-mark-dark.png";
 import OMarkLightIcon from "../images/o-mark-light-2.png";
 import XMarkLightIcon from "../images/x-mark-light.png";
@@ -6,10 +5,18 @@ import XMarkDarkIcon from "../images/x-mark-dark.png";
 import { useTicTacToeContext } from "../context/TicTacToe";
 
 const PickPlayerMark = () => {
-  const { initialPlayerMark, setInitialPlayerMark } = useTicTacToeContext();
+  const { initialPlayerMark, setInitialPlayerMark, setPlayerMark } =
+    useTicTacToeContext();
 
-  const chooseX = () => setInitialPlayerMark("x");
-  const chooseO = () => setInitialPlayerMark("o");
+  const chooseX = () => {
+    setInitialPlayerMark("x");
+    setPlayerMark("x");
+  };
+
+  const chooseO = () => {
+    setInitialPlayerMark("o");
+    setPlayerMark("o");
+  };
 
   return (
     <div className="shadow-box-dark-navy rounded-[10px] mb-8 bg-semi-dark-navy text-center uppercase px-6 md:mb-10">

@@ -131,13 +131,14 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 
 ## Daily summaries
 
-| Date             | Time Spent | Summary                                                                           |
-| ---------------- | ---------- | --------------------------------------------------------------------------------- |
-| April 4th, 2026  | 1 hour     | I extracted the existing src dir to a typescript project                          |
-| April 7th, 2026  | 1 hour     | I added types (where necessary) to all components                                 |
-| April 16th, 2026 | 0.5 hours  | I worked a bit on the PickPlayerMark component                                    |
-| May 21st, 2026   | 1 hour     | I updated the mobile version of the app using tailwind sizes, not with rem values |
-| May 23st, 2026   | 2.5 hours  | I worked on the tablet and desktop version and added hover and active states      |
-| May 26th, 2026   | 1 hour     | I added a TicTacToe context                                                       |
+| Date             | Time Spent | Summary                                                                                                |
+| ---------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
+| April 4th, 2026  | 1 hour     | I extracted the existing src dir to a typescript project                                               |
+| April 7th, 2026  | 1 hour     | I added types (where necessary) to all components                                                      |
+| April 16th, 2026 | 0.5 hours  | I worked a bit on the PickPlayerMark component                                                         |
+| May 21st, 2026   | 1 hour     | I updated the mobile version of the app using tailwind sizes, not with rem values                      |
+| May 23st, 2026   | 2.5 hours  | I worked on the tablet and desktop version and added hover and active states                           |
+| May 26th, 2026   | 1 hour     | I added a TicTacToe context                                                                            |
+| May 28th, 2026   | 1 hour     | I made the app semi functional (it doesnt check for win conditions and it doesnt work against the CPU) |
 
-_Total time spent working on the project:_ **7 hours**
+_Total time spent working on the project:_ **8 hours**

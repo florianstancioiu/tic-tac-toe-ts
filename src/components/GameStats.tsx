@@ -12,7 +12,11 @@ const GameStats = () => {
         numericTitle={14}
       />
       <StatCell className="bg-silver" title="Ties" numericTitle={32} />
-      <StatCell className="bg-light-yellow" title="O (CPU)" numericTitle={11} />
+      <StatCell
+        className="bg-light-yellow"
+        title={initialPlayerMark === "x" ? "O (CPU)" : "X (CPU)"}
+        numericTitle={11}
+      />
     </div>
   );
 };
